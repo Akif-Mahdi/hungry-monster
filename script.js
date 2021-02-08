@@ -52,9 +52,8 @@ const searchByFullName=(mealName) =>{
 
 const creatingMealDetail = (meals) => {
     meals.forEach(element => {
-
             const mealDiv = document.createElement('div');
-            const htmlTag = `<div class="card h-100 shadow p-3 mb-5 bg-white rounded" >
+            const htmlTag = `<div class="card h-100 shadow p-3 mb-5 bg-white rounded"  >
                             <div class="cardImgHolder">
                                  <img src="${element.strMealThumb}"class="card-img-top cardImgFeatures">
                               </div>
@@ -76,7 +75,7 @@ function mealDivClick()
     console.log(this)
     let childmealName = this.children[1];
     mealName = childmealName.innerText;
-    // console.log({ mealName });
+
  
     let result = fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
         .then(res => res.json())
@@ -106,6 +105,6 @@ function mealDivClick()
                             </ul>
                             `;
             mealDiv.innerHTML = htmlTag;
-            document.getElementById("meal-info").appendChild(mealDiv);
+            document.getElementById("card-element").appendChild(mealDiv);
     })
 }

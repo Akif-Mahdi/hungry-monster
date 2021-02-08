@@ -8,15 +8,7 @@
 .navElementPosition{
 	margin-left: auto;
 }
-.creamColor{
-    color: #fabe4c; 
-}
-.blueColor{
-    color: #35385a;  
-}
-.headerFont{
-    font-size: 50px;
-}
+
 
 .buttonFeatures{
     background-color: #8da724; 
@@ -29,9 +21,7 @@
     font-weight: 700;
     
 }
-.buttonImage{
-    width:27%;
-}
+
 .cardImgFeatures{
     padding: 10px;
     max-width: 250px;
@@ -47,26 +37,4 @@
     background-color: #f1f1f1;
     margin: 5px;
 }
-.decorationLeft{
-    width: 100%;
-}
-.decorationRight{
 
-    height: 50px;
-    width: 50px;
-}
-.makeInline{
-    display: inline;
-}
-.rowDecorationRight{
-    /* /justify-content: flex-end; */
-    size: 50%;
-}
-.carouselBG{
-    background-color: rgb(226, 201, 198);
-}
-.divDecoration{
-    height: 50%;
-    display: inline;
-
-}
