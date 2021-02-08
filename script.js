@@ -65,22 +65,16 @@ const creatingMealDetail = (meals) => {
                             `;
             
             mealDiv.innerHTML = htmlTag;
-            mealDiv.addEventListener('click',mealDivClick)
+            mealDiv.addEventListener('click',mealDivClick(element.strMeal))
             document.getElementById("card-element").appendChild(mealDiv);
         });
 };
 
-function mealDivClick()
-{
-    console.log(this)
-    let childmealName = this.children[1];
-    mealName = childmealName.innerText;
+function mealDivClick(mealName)
 
- 
     let result = fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
         .then(res => res.json())
         .then(data => {
-            // const element=[];
             let name = "";
             let url = "";
             console.log(data.meals.length);
